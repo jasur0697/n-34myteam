@@ -472,8 +472,9 @@ background-position: 50% 5%;
   background-color: var(--color-secondary-dark-green);
 }
 
-.footer-red {
+.menu__list-links {
   display: flex;
+  padding: 48px 0;
 }
 
 
@@ -491,8 +492,37 @@ background-position: 50% 5%;
   font-size: 15px;
   line-height: 25px;
   opacity: 0.6;
+  width: 168px;
+  margin-left: 125px;
+  margin-right: auto;
 }
 
+.telephone-num {
+  color:var(--color-primary-white);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-menu__last {
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+}
+
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  width: 106px;
+  padding: 0;
+  margin-left: auto;
+
+}
 
 .copyright {
   color: var(--color-primary-white);
