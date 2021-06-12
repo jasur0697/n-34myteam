@@ -81,6 +81,9 @@ img {
   margin-left: 80px;
 }
 
+
+
+
 .nav-margin {
   margin-right: 40px;
 }
@@ -195,32 +198,30 @@ img {
 }
 
 
+
+/* Features */
+
 .features {
   position: relative;
   z-index: 100;
   background:var(--color-secondary-sacramento);
   padding-bottom: 140px;
+  background-image: url(../imgs/feature-bg.svg);
+  display: block;
+  background-repeat:no-repeat;
+  background-position: calc(50% + 680px) 500px; 
 }
+
 
 .features_content {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
-  padding-top: 198px;
+  padding-top: 198px; 
+ 
 }
 
-.features__left-section {
-  margin-right: auto;
-}
-.index-features__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.features:before  {
+.features_content:before  {
   position: absolute;
-  left:120px;
   top: 140px;
   content: "";
   width: 50px;
@@ -229,6 +230,9 @@ img {
   background-color: var(--color-primary-light-coral);
 }
 
+.features__left-section{
+  margin-right: auto;
+}
 .features__left-heading {
   font-style: normal;
   font-weight: bold;
@@ -240,13 +244,47 @@ img {
   padding:0;
 }
 
-.index-features__list {
-    width: 445px;
+.features__list-container {
+  list-style: none;
+  margin: 0;
+  padding:0;
+  width: 550px;
+  display: flex;
 }
 
+.index-feature--a::before {
+  width:80px;
+  height: 80px;
+  background-image: url(../imgs/feature-ic1.svg);
+  content:"";
+  background-repeat: no-repeat;
+  margin-right: 30px;
+}
+
+.index-feature--b::before {
+  width:80px;
+  height: 80px;
+  background-image: url(../imgs/feature-ic2.svg);
+  content:"";
+  background-repeat: no-repeat;
+  margin-right: 30px;
+}
+
+.index-feature--c::before {
+  width:80px;
+  height: 80px;
+  background-image: url(../imgs/feaute-ic3.svg);
+  content:"";
+  background-repeat: no-repeat;
+  margin-right: 30px;
+}
+
+
 .index-feature__item {
+  width:500px;
   margin-bottom: 32px;
 }
+
 
 .index-feature__heading {
   font-style: normal;
@@ -256,7 +294,6 @@ img {
   color: var(--color-primary-light-coral);
   margin-top: 0;
   margin-bottom: 16px;
-
 }
 
 .index-feature__desc {
@@ -272,7 +309,118 @@ img {
 }
 
 
+/* Success stories */
+.stories {
+  background-color: var(--color-primary-midnight-green);
+  background-image: url(../imgs/success-bottom.svg);
+  display: block;
+  background-repeat:no-repeat;
+  background-position: calc(50% + 680px) 665px; 
+  padding-bottom: 140px;
 
+}
+
+
+.storires__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 140px;
+  position: relative;
+}
+
+.storires__content::before {
+  content: "";
+  background-image: url(../imgs/success-top.svg);
+  width: 147px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.stories__heading {
+  width: 932px;
+  padding-bottom: 92px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  }
+
+.stories__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1110px;
+
+}
+
+
+/* Why back image is not fully seen and it is cutting off */
+
+.stories__item {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 350px;
+height: 100%;
+background-image: url(../imgs/string.svg);
+background-repeat: no-repeat;
+background-position: 50% 5%;
+
+}
+
+
+
+.stories__quote {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--color-primary-white);
+}
+
+.stories__author {
+  color:var(--color-secondary-rapture-blue);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 24px 0 2px 0;
+}
+
+.stories__title {
+  font-style: italic;
+  color: var(--color-primary-white);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.stories-green__part {
+  color: var(--color-secondary-rapture-blue);
+}
+
+.stories__heading {
+  color: var(--color-primary-white);
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
 
 .footer-red {
   background: rgba(246, 126, 126, 1);
@@ -317,4 +465,40 @@ img {
   background: #012F34;
   border: 2px solid #012F34;
   color:white;
+}
+
+
+.footer {
+  background-color: var(--color-secondary-dark-green);
+}
+
+.footer-red {
+  display: flex;
+}
+
+
+.footer-menu__list {
+  display: flex;
+  list-style: none;
+  width: 140px;
+  padding:0;
+}
+
+.address {
+  color:var(--color-primary-white);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+}
+
+
+.copyright {
+  color: var(--color-primary-white);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
 }
