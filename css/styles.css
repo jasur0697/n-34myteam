@@ -617,3 +617,32 @@ background-position: 50% 5%;
   background-color: var(--color-primary-light-coral);
 }
 
+
+
+.clients {
+  background-color: var(--color-secondary-dark-green);
+  text-align: center;
+  background-image: url(../imgs/clients-bg.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 575px) 0;
+}
+
+
+.clients__heading {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--color-primary-white);
+  padding: 140px 0 70px 0;
+}
+
+.clients__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 140px;
+}
