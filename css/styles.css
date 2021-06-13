@@ -28,6 +28,17 @@ img {
   height: auto;
 }
 
+.soc-links svg {
+  max-width: 100%;
+  height: auto;
+  fill: white;
+}
+
+.soc-links svg:hover {
+    fill: var(--color-primary-light-coral);
+}
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -39,6 +50,9 @@ img {
   overflow: hidden;
 }
 
+blockquote {
+  margin: 0;
+}
 
 :root {
   --color-primary-midnight-green: #014E56;
@@ -354,8 +368,9 @@ img {
   align-items: center;
   justify-content: space-between;
   max-width: 1110px;
-
 }
+
+
 
 
 /* Why back image is not fully seen and it is cutting off */
@@ -532,3 +547,73 @@ background-position: 50% 5%;
   line-height: 25px;
   opacity: 0.6;
 }
+
+
+
+
+
+
+
+/* ABOUT PAGE */
+
+.hero-about {
+  background-color:var(--color-primary-midnight-green);
+  background-repeat: no-repeat;
+  padding-bottom: 250px;
+  background-image: url(../imgs/hero-about.svg);
+  background-position: calc(50% + 676px) 166px;
+}
+
+.hero__content-about {
+  display: flex;
+  position: relative;
+  z-index: 20;
+}
+
+
+
+.hero__heading-about {
+  color: var(--color-primary-white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100px;
+  margin: 0;
+  margin-right: auto;
+  width: 350px;
+}
+
+
+
+.line {
+  width: 50px;
+  height: 4px;
+  display: block;
+}
+
+.green-line {
+  margin-bottom: 80px;
+  background-color: var(--color-secondary-rapture-blue);
+}
+
+.hero__desc-about {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  width: 730px;
+  margin: 0;
+  color: var(--color-primary-white);
+}
+
+
+.hero__desc-about::after  {
+  position: absolute;
+  bottom: 140px;
+  content: "";
+  width: 50px;
+  height: 4px;
+  display: block;
+  background-color: var(--color-primary-light-coral);
+}
+
