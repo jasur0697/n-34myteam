@@ -26,16 +26,20 @@ body {
 img {
   max-width: 100%;
   height: auto;
+
 }
 
 .soc-links svg {
   max-width: 100%;
   height: auto;
   fill: white;
+  transition: transform 0.3s ease,
 }
 
 .soc-links svg:hover {
     fill: var(--color-primary-light-coral);
+    transition: transform 0.3s ease,
+    
 }
 
 
@@ -127,7 +131,7 @@ blockquote {
   border-radius: 24px;
   padding: 10px 33px;
   margin-left: auto;
-
+ 
 }
 
 
@@ -652,6 +656,9 @@ background-position: 50% 5%;
 
 .directors {
   background-color:var(--color-secondary-deep-jungle-green);
+  background-image: url(../imgs/directors-top.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 674px ) 0;
 
 }
 
@@ -676,22 +683,23 @@ background-position: 50% 5%;
   padding: 0;
   display: flex;
   align-items: center;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
   list-style: none;
-  padding-bottom: 28px;
   position: relative;
-  z-index: 1;
   padding-bottom: 68px;
 }
+
+
+/* Has scrollbar  cannot not find why*/
 .directors__list::before {
   content: "";
   background-image: url(../imgs/success-top.svg);
+  background-repeat: no-repeat;
   width: 147px;
   height: 100px;
   position: absolute;
-  z-index: 1;
   bottom: 0;
-  right: -158px;
+  right: -115px;
 }
 
 .directors__item {
@@ -784,7 +792,7 @@ background-position: 50% 5%;
 
 .card__back-links {
   color: var(--color-primary-white);
-  transition: color 0.3s ease;
+
 }
 
 .card__back-links:hover {
